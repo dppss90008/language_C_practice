@@ -1,0 +1,21 @@
+# include<stdio.h>
+# include<stdlib.h>
+
+int main(void){
+	
+	int i,n;
+	int sum=0;
+	scanf("%d",&n);
+	
+	for(i=1;i<=n;i++){
+		sum += i;
+		printf("%d",i);
+		if (i<n){
+			printf("+");
+		}	
+	}
+	printf("=%d\n",sum);
+	
+	return 0;
+}
+
