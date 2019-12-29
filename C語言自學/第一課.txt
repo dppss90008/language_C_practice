@@ -1,0 +1,55 @@
+程式語言 C 語言
+影片來源: Feis Studio [Youtube]
+
+電腦的組成
+- 主要單元
+	1. 中央處理器CPU
+	2. 記憶體RAM
+電腦可以看懂什麼? 數位訊號0與1
+硬體廠商: 指令集架構實作
+
+機器語言: 010010101010100001101010111
+組合語言: LOAD A ADD B STORE SUM 組譯器變成01
+高階語言: SUM = A+B [人類可以理解] 編譯器 Compiler
+
+C特色
+	高階語言、可攜性[同程式碼可以在不同機器上編譯]
+	可以對應到有效率的機器碼
+
+歷史
+	1972 Ken Thompson and Dennis Ritchie
+	1978 K&R1版本
+	1989 C89版本
+	1990 C90
+	1999 C99
+	2011 C11 [最新版本]
+
+ 
+過程
+
+text editor: Sublime Notepad++ ...
+撰寫 Source code
+編譯器 C compiler
+
+C語言編譯器
+Visual C++ ; GCC C [GNU專案,可適用多平台]
+編譯器之間差異
+- 效率: 產生機器碼的效率,機器碼執行的效率
+- 相容器: 自訂擴充功能[非標準以內功能],只能在某編譯器編譯
+- 行為一致姓: 機器碼執行起來有一定行為
+	實作定義 Implementation-defined 
+	- 不同版本或使用不同設定的同款編譯器可能產生不一樣的行為
+	- 目的: 程式更有效率
+
+整合是開發環境[圖形化介面 GUI]
+Integrated Development Environment IDE
+	- 包含文字編輯器[提示]
+	- 編譯器[額外安裝]
+	- 自動建置工具[自動產生執行檔與執行]
+	- 除錯，協助開發
+Ex Visual Studio ; Dev C++ ; Code::Blocks ; Eclipse
+
+
+
+
+
