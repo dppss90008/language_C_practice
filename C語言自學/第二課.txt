@@ -101,6 +101,87 @@
 
 2020-1-14 完成到 2.3課
 
+#  整數與浮點數型別間的轉換
+* int + int = int
+* float + float = float
+* double + double = double
+
+- double average = (num1 + num2 + num3)/3
+- num1 num2 num3 3 都是 int 運算後還是 int
+- int / int ex. 10/3 = 3(int)
+- int 存到 double型別的average 
+- 3 自動變成 double 型別(改變型態) = 3.000000 
+- 找最接近的double型別數字
+- 10 / 3. => int / double
+- int + float = int變成float ? 還是float變成int?
+- 把他轉成範圍大的型別 因此int 變成float (出錯變小)
+
+* 隱性轉型
+* int + float = float + float
+* double + float = double + double
+
+* 顯性轉型 : 強制轉型
+* float average = (num1 + num2 + num3)/ (double)3
+- 思考:幾次轉型 
+    1. 顯性轉型(double) 
+    2. 隱性轉型 
+    3. double變成float
+
+- 字面常數literal constant 
+- 123 預設 int 型別
+- 123.45 預設 double 型別
+- 123.45f 預設 float 型別
+
+# 字元型別簡介
+- HA兩個字 要轉換成0跟1構成序列
+- 怎麼在電腦中儲存文資訊
+- 將[字長什麼樣子] - 字型, 看到樣子才需要用到
+- 哪個字 編碼 (encoding)
+- H 就是 72號 A 就是 65號 給他獨有的編號
+- 所以變成存數字就好了
+
+# 字元編碼
+- 給每個字元一個獨一無二的編號
+- 字元有幾種可能 英文字母 52種 (大小寫)
+- 數字 0-9 常用符號 20~30
+- 總共不到256種
+- 一個位元組就夠了
+* C語言使用的字元編碼[實作定義]
+* 常用編碼 ASCII American Standard Codle for Information Interchange
+
+# 使用 char 字元型別
+- char 占一個位元組 256種
+- wchar_t [寬字元] : 中文日文韓文
+- 中文有多少可能? Big5 占兩個位元組
+- 解決方法 使用多個 char 或 wchar_t
+- char 特色 : ASCII 占1位元 是一種整數型別
+- 使用 單引號 '字元' '\n'
+- 雙引號 "字串" [存很多字元]
+- printf 與 scanf 字元格式符 %c
+
+# 怎麼對 char 型別做運算
+- char ch = 'A' + 1 ;
+- 'A' = 65 + 1 = 66
+- 而 66 在 ASCII 表示 'B'
+- 'a' = 97 'A' = 65
+- 'A' - 1 = 64 = '@'
+- 'A' + '1' = 65 + 49 = 114 = 'r'
+
+# 大小寫轉換
+	
+    if( ch>=97 && ch<=123){
+		ch = ch - 32;
+	}
+	else if ( ch>= 65 && ch<= 91){
+		ch = ch + 32;
+	}
+
+# 怎麼選擇要使用的型別?
+
+用途    型別    printf  scanf 
+整數    int     %d      %d
+浮點數  double  %f      %lf 
+字元    char    $c      %c
 
 
 
